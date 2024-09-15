@@ -22,4 +22,3 @@ def text_indentation(text):
         if text[i] in ('.', '?', ':'):
             print(text[prev:i + 1].strip(), end="\n\n")
             prev = i + 1
-text_indentation("hello")
