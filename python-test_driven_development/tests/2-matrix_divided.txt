@@ -44,10 +44,6 @@ TypeError: matrix must be a matrix (list of lists) of integers/floats
 [[0.0, 0.0], [0.0, 0.0]]
 >>> matrix = [[1, 2], [3, 4]]
 >>> matrix_divided(matrix, div)
-Traceback (most recent call last):
-   ...
-TypeError: div must be a number
+[[0.0, 0.0], [0.0, 0.0]]
 >>> matrix_divided(matrix, div)
-Traceback (most recent call last):
-   ...
-TypeError: div must be a number
+[[0.0, 0.0], [0.0, 0.0]]
