@@ -15,4 +15,4 @@ def lazy_matrix_mul(m_a, m_b):
     Returns:
         list of lists: The resulting matrix after multiplication.
     """
-    return np.matmul(m_a, m_b)
+    return (np.matmul(m_a, m_b))
