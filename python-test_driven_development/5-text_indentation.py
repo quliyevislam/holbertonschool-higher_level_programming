@@ -25,3 +25,4 @@ def text_indentation(text):
             while i + 1 < length and text[i + 1] == ' ':
                 i += 1
         i += 1
+text_indentation("text:.?")

@@ -10,7 +10,6 @@ Text:
 .
 
 ?
-
 >>> text_indentation(None)
 Traceback (most recent call last):
     ...
