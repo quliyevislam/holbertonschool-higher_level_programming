@@ -16,7 +16,7 @@ def text_indentation(text):
     if not isinstance(text, str):
         raise TypeError("text must be a string")
     if '.' not in text and '?' not in text and ':' not in text:
-        print(text)
+        print(text, end="")
     prev = 0
     for i in range(len(text)):
         if text[i] in ('.', '?', ':'):
