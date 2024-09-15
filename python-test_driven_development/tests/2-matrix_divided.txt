@@ -42,3 +42,8 @@ TypeError: matrix must be a matrix (list of lists) of integers/floats
 >>> div = float('inf')
 >>> matrix_divided(matrix, div)
 [[0.0, 0.0], [0.0, 0.0]]
+>>> matrix = [[1, 2], [3, 4]]
+>>> matrix_divided(matrix)
+sda
+>>> matrix_divided(matrix, div)
+sad
