@@ -1,6 +1,27 @@
 #!/usr/bin/python3
 
+"""Defines a matrix division function."""
+
+
 def matrix_divided(matrix, div):
+    """
+    Divides each element of a matrix by
+    a given divisor and rounds the result to 2 decimal places.
+
+    Args:
+        matrix (list of list of int/float): A matrix to be divided.
+        div (int/float): The divisor (must be non-zero).
+
+    Returns:
+        list of list of float: A new matrix with
+        each element divided and rounded to 2 decimal places.
+
+    Raises:
+        TypeError: If `div` is not a number,
+        if `matrix` contains non-numeric elements,
+        or if rows are not all the same length.
+        ZeroDivisionError: If `div` is zero.
+    """
     error = ("div must be a number",
              "division by zero",
              "Each row of the matrix must have the same size",
