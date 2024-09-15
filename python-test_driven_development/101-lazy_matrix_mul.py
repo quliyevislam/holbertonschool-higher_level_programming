@@ -15,10 +15,7 @@ def lazy_matrix_mul(m_a, m_b):
     Returns:
         list of lists: The resulting matrix after multiplication.
     """
-    if not isinstance(m_a, (list, np.ndarray)) or not isinstance(m_b, (list, np.ndarray)):
-        raise TypeError("Scalar operands are not allowed, use '*' instead")
-    
-    try:
-        return np.matmul(m_a, m_b)
-    except TypeError:
-        raise TypeError("Scalar operands are not allowed, use '*' instead")
+    m_a = np.array(m_a)
+    m_b = np.array(m_b)
+        
+    return np.matmul(m_a, m_b)
