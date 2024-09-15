@@ -3,6 +3,8 @@
 99
 >>> add_integer(2, 98)
 100
+>>> add_integer(2.2, 98.98)
+100
 >>> add_integer("a")
 Traceback (most recent call last):
 TypeError: a must be an integer
