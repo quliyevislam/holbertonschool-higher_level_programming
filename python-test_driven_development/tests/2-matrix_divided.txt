@@ -43,7 +43,10 @@ TypeError: matrix must be a matrix (list of lists) of integers/floats
 >>> matrix_divided(matrix, div)
 [[0.0, 0.0], [0.0, 0.0]]
 >>> matrix = [[1, 2], [3, 4]]
->>> matrix_divided(matrix)
+>>> div = None
+>>> matrix_divided(matrix, div)
 sda
+>>> matrix = None
+>>> div = None
 >>> matrix_divided(matrix, div)
 sad
