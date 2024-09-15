@@ -40,9 +40,24 @@ TypeError: m_b should contain only integers or floats
 print(matrix_mul([[1, 2], [3, 4]], [[1], [3, 4]]))
 Traceback (most recent call last):
     ...
-TypeError: each row of m_a must be of the same size
+TypeError: each row of m_b must be of the same size
 
 print(matrix_mul([[1, 2]], [[3, 4], [5, 6], [7, 8]]))
 Traceback (most recent call last):
     ...
 ValueError: m_a and m_b can't be multiplied
+
+>>> print(matrix_mul([[12]], "str"))
+Traceback (most recent call last):
+    ...
+TypeError: m_b must be a list
+
+print(matrix_mul([[12]], [1,2,3]))
+Traceback (most recent call last):
+    ...
+TypeError: m_b must be a list of lists
+
+>>> print(matrix_mul([[1j, 2j], [3j, 4j]], [[1, 2], [3, 4]]))
+Traceback (most recent call last):
+    ...
+TypeError: m_a should contain only integers or floats
