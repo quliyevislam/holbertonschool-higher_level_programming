@@ -45,8 +45,12 @@ TypeError: matrix must be a matrix (list of lists) of integers/floats
 >>> matrix = [[1, 2], [3, 4]]
 >>> div = None
 >>> matrix_divided(matrix, div)
-sda
+Traceback (most recent call last):
+   ...
+TypeError: div must be a number
 >>> matrix = None
 >>> div = None
 >>> matrix_divided(matrix, div)
-sad
+Traceback (most recent call last):
+   ...
+TypeError: div must be a number
