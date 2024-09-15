@@ -2,13 +2,13 @@
 >>> matrix_divided()
 Traceback (most recent call last):
     ...
-NameError: name 'matrix' is not defined
+TypeError: matrix_divided() missing 2 required positional arguments: 'matrix' and 'div'
 
 >>> matrix = [[1, 2], [3, 4]]
 >>> matrix_divided(matrix)
 Traceback (most recent call last):
     ...
-NameError: name 'div' is not defined
+TypeError: matrix_divided() missing 1 required positional argument: 'div'
 
 >>> matrix = [[1, 2, 3], [4, 5, 6]]
 >>> div = 2
