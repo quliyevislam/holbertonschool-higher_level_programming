@@ -52,7 +52,7 @@ Traceback (most recent call last):
     ...
 TypeError: m_b must be a list
 
-print(matrix_mul([[12]], [1,2,3]))
+>>> print(matrix_mul([[12]], [1,2,3]))
 Traceback (most recent call last):
     ...
 TypeError: m_b must be a list of lists
