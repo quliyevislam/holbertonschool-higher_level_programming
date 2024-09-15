@@ -1,9 +1,15 @@
 >>> matrix_divided = __import__('2-matrix_divided').matrix_divided
 >>> matrix_divided(matrix, div)
-sdasdsa
+Traceback (most recent call last):
+    ...
+NameError: name 'matrix' is not defined
+
 >>> matrix = [[1, 2], [3, 4]]
 >>> matrix_divided(matrix, div)
-sdasd
+Traceback (most recent call last):
+    ...
+NameError: name 'div' is not defined
+
 >>> matrix = [[1, 2, 3], [4, 5, 6]]
 >>> div = 2
 >>> matrix_divided(matrix, div)
@@ -43,6 +49,7 @@ TypeError: matrix must be a matrix (list of lists) of integers/floats
 Traceback (most recent call last):
     ...
 TypeError: matrix must be a matrix (list of lists) of integers/floats
+
 >>> matrix = [[1, 2], [3, 4]]
 >>> div = float('inf')
 >>> matrix_divided(matrix, div)
