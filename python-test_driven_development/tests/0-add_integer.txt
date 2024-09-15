@@ -15,4 +15,4 @@ Traceback (most recent call last):
     ...
 TypeError: b must be an integer
 >>> add_integer(1e+1)
-4000000
+108
