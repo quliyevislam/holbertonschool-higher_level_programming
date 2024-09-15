@@ -16,7 +16,10 @@ def matrix_divided(matrix, div):
         if len(matrix) > 1 and len(row) != len(matrix[0]):
             raise TypeError(error[2])
         temp = []
-        temp = row.copy()
+        if isinstance(row, list):
+            temp = row.copy()
+        else:
+            raise TypeError(error[3])
         for i in range(len(temp)):
             if not isinstance(temp[i], (int, float)):
                 raise TypeError(error[3])
