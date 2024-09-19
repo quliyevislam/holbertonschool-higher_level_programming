@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-"""This module defines a simple class named Square."""
+"""This module defines a class named Square."""
 
 
 class Square:
-    "This is the simplest class."
+    """This class defines a square with a specified size."""
     def __init__(self, size):
         self._Square__size = size
