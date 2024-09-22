@@ -7,10 +7,16 @@ class Rectangle:
     This class defines a rectangle.
     Attributes
     ----------
-    __height : int
-        The height of the rectangle.
-    __width : int
-        The width of the rectangle.
+        __height : int
+            The height of the rectangle.
+        __width : int
+            The width of the rectangle.
+    Methods
+    -------
+        area(self):
+            Method for calculating the rectangle's area.
+        perimeter(self):
+            Method for calculating the rectangle's perimeter.
     """
     def __init__(self, width=0, height=0):
         self.height = height
