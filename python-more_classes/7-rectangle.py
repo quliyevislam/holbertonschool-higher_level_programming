@@ -130,7 +130,7 @@ class Rectangle:
         rectangle = ""
         for height in range(self.__height):
             for width in range(self.__width):
-                rectangle += Rectangle.print_symbol
+                rectangle += str(self.print_symbol)
             if height < self.__height - 1:
                 rectangle += "\n"
         return rectangle
