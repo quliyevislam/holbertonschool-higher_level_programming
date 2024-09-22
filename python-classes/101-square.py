@@ -119,7 +119,7 @@ class Square:
         Returns the string representation of the square.
         """
         if self.__size == 0:
-            return "\n"
+            return ""
         square = ""
         square += "\n" * self.__position[1]
         for height in range(self.__size):
