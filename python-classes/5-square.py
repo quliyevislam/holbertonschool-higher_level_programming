@@ -63,7 +63,7 @@ class Square:
 
     def my_print(self):
         """
-        Print the square with the character '#'. 
+        Print the square with the character '#'.
         If the size is 0, print an empty line.
         """
         if self.__size == 0:
@@ -72,5 +72,5 @@ class Square:
 
         for height in range(self.__size):
             for width in range(self.__size):
-                print ("#", end="")
+                print("#", end="")
             print()
