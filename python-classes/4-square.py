@@ -8,15 +8,13 @@ class Square:
 
     Attributes
     ----------
-    size : int
-        The size of the square's side.
-
+        size : int
+            The size of the square's side.
     Methods
     -------
-    area():
-        Returns the area of the square.
+        area():
+            Returns the area of the square.
     """
-
     def __init__(self, size=0):
         self.__size = size
 
@@ -34,14 +32,12 @@ class Square:
 
     @size.setter
     def size(self, size):
-         """
+        """
         Set the size of the square.
-
         Parameters
         ----------
             size : int
                 The new size of the square's side.
-
         Raises
         ------
             TypeError
@@ -58,11 +54,9 @@ class Square:
     def area(self):
         """
         Calculates the area of the square.
-
         Returns
         -------
             __size**2 : int
                 The area of the square.
         """
-
         return self.__size**2
