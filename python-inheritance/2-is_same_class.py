@@ -18,8 +18,6 @@ def is_same_class(obj, a_class):
             False if obj is not an instance of a_class or
             if a_class is the object class.
     """
-    if a_class.__name__ == "object":
-        return False
-    if isinstance(obj, a_class):
+    if type(obj) == a_class:
         return True
     return False
