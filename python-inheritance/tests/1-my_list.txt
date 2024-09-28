@@ -10,16 +10,19 @@
 >>> my_list_2 = MyList()
 >>> my_list_2.append(1)
 >>> my_list_2.append(4)
->>> print(my_list_2.print_sorted())
+>>> my_list_2.print_sorted()
 [1, 4]
-None
 >>> my_list_3 = MyList()
 >>> my_list_3.append(1)
 >>> my_list_3.append(-4)
->>> print(my_list_3.print_sorted())
+>>> my_list_3.print_sorted()
 [-4, 1]
-None
 >>> my_list_3 = MyList()
->>> print(my_list_3.print_sorted())
+>>> my_list_3.print_sorted()
 []
+>>> my_list_4 = MyList()
+>>> my_list_4.append(42)
+>>> rtrn = my_list_4.print_sorted()
+[42]
+>>> print(rtrn)
 None
