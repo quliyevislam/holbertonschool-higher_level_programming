@@ -49,7 +49,10 @@ class Rectangle(Shape):
         """Return the perimeter of the rectangle."""
         return 2 * (self.width + self.height)
 
+
 def shape_info(Shape):
     """Print the area and perimeter of a shape."""
-    print("Area: {}".format(Shape.area()))
-    print("Perimeter: {}".format(Shape.perimeter()))
+    a = Shape.area()
+    p = Shape.perimeter()
+    print("Area: {}".format(a))
+    print("Perimeter: {}".format(p))
