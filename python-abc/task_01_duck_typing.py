@@ -4,38 +4,52 @@ from math import pi
 
 
 class Shape(ABC):
+    """Abstract base class for shapes."""
+
     @abstractmethod
     def area(self):
+        """Calculate the area of the shape."""
         pass
 
     @abstractmethod
     def perimeter(self):
+        """Calculate the perimeter of the shape."""
         pass
 
 
 class Circle(Shape):
+    """Represents a circle with a given radius."""
+
     def __init__(self, radius):
-        self.__radius = radius
+        """Initialize the circle with a radius."""
+        self.radius = radius
 
     def area(self):
-        return pi*self.__radius**2
+        """Return the area of the circle."""
+        return pi * self.radius ** 2
 
     def perimeter(self):
-        return 2*pi*self.__radius
+        """Return the perimeter of the circle."""
+        return 2 * pi * self.radius
 
 
 class Rectangle(Shape):
+    """Represents a rectangle with width and height."""
+
     def __init__(self, width, height):
-        self.__width = width
-        self.__height = height
+        """Initialize the rectangle with width and height."""
+        self.width = width
+        self.height = height
 
     def area(self):
-        return self.__height*self.__width
+        """Return the area of the rectangle."""
+        return self.height * self.width
 
     def perimeter(self):
-        return 2*(self.__width+self.__height)
-
+        """Return the perimeter of the rectangle."""
+        return 2 * (self.width + self.height)
 
 def shape_info(Shape):
+    """Print the area and perimeter of a shape."""
     print("Area: {}".format(Shape.area()))
     print("Perimeter: {}".format(Shape.perimeter()))
