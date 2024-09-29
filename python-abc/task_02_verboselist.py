@@ -35,4 +35,6 @@ class VerboseList(list):
         if index is None:
             index = len(self) - 1
         print(f"Popped [{self[index]}] from the list.")
-        super().pop(index)
+        
+        popped = super().pop(index)
+        return popped
