@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-
+"""This module contains VerboseList class"""
 
 class VerboseList(list):
     """
