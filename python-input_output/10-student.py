@@ -25,8 +25,8 @@ class Student:
     def to_json(self, attrs=None):
         """Retrieves a dictionary representation of a Student"""
         if not attrs:
-            return sorted(self.__dict__)
+            return self.__dict__
         set1 = set(self.__dict__.keys())
         set2 = set(attrs)
         d = {key : self.__dict__[key] for key in list(set1.intersection(set2))}
-        return sorted(d)
+        return d
