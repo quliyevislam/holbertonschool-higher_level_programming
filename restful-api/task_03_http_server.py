@@ -29,7 +29,11 @@ class SimpleAPIHandler(BaseHTTPRequestHandler):
             error_message = {"error": "Endpoint not found"}
             self.wfile.write(json.dumps(error_message).encode('utf-8'))
 
-server_address = ('', 8000)
-httpd = HTTPServer(server_address, SimpleAPIHandler)
-print("Serving on port 8000...")
-httpd.serve_forever()
+def run(server_class=HTTPServer, handler_class=SimpleAPIHandler, port=8000):
+    server_address = ('', port)
+    httpd = server_class(server_address, handler_class)
+    print(f'Serving on port {port}...')
+    httpd.serve_forever()
+
+if __name__ == "__main__":
+    run()
