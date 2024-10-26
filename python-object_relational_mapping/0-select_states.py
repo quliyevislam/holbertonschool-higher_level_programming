@@ -1,23 +1,23 @@
 #!/usr/bin/python3
-import MySQLdb
-import sys
+"""Module for Selecting states"""
 
-username = sys.argv[1]
-password = sys.argv[2]
-database = sys.argv[3]
+if __name__ == '__main__':
+    from sys import argv
+    import MySQLdb
 
-def list_states(username, password, database):
-    db = MySQLdb.connect(host="localhost", port=3306, user=username, passwd=password, db=database)
+    db = MySQLdb.connect(
+        user=argv[1],
+        password=argv[2],
+        database=argv[3]
+    )
     cursor = db.cursor()
 
-    cursor.execute("SELECT * FROM states ORDER BY id ASC;")
-    
-    results = cursor.fetchall()
+    cursor.execute('SELECT * FROM states')
 
-    for row in results:
-        print(row)
+    for state in cursor.fetchall():
+        print(state)
 
-    cursor.close()
-    db.close()
-
-list_states(username, password, database)
+    if cursor:
+        cursor.close()
+    if db:
+        db.close()
